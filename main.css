@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .dropdown-item:hover {
   background: rgb(204, 36, 36);
 }
@@ -195,6 +199,21 @@ body {
   color: white;
   border-color: #9cc4f1fb;
   cursor: pointer;
+}
+
+footer {
+  background-color: #0062d3;
+  color: white;
+  height: 150px;
+}
+
+.up {
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 50%;
 }
 @media screen and (max-width: 990px) {
   .nav-item:hover::after {
