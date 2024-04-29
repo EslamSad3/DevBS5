@@ -121,12 +121,11 @@ body {
   background-size: cover;
   background-position: center center;
 }
-img {
+.image {
   transition: all ease-in-out 0.3s;
 }
-
-.port-card:hover img {
-  scale: 1.2;
+.port-card:hover .image {
+  scale: 1.1;
 }
 
 .plus {
@@ -155,6 +154,35 @@ img {
 
 .carousel-indicators {
   bottom: -10%;
+}
+
+.card-box {
+  position: absolute;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+  line-height: 25px;
+  overflow: hidden;
+}
+.card-box h6 {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+.card-category {
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px 5px;
+  overflow: hidden;
+  background-color: #0078ff;
+  border-radius: 4px;
+}
+.card-footer-img img{
+  width: 35px;
 }
 @media screen and (max-width: 990px) {
   .nav-item:hover::after {
