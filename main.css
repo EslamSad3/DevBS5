@@ -121,7 +121,26 @@ body {
   background-size: cover;
   background-position: center center;
 }
+img {
+  transition: all ease-in-out 0.3s;
+}
 
+.port-card:hover img {
+  scale: 1.2;
+}
+
+.plus {
+  width: 50px;
+  height: 50px;
+}
+.plus span {
+  font-size: 50px;
+  top: 40%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
 @media screen and (max-width: 990px) {
   .nav-item:hover::after {
     width: 10%;
