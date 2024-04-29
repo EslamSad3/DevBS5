@@ -136,10 +136,25 @@ img {
 .plus span {
   font-size: 50px;
   top: 40%;
-
   left: 50%;
-
   transform: translate(-50%, -50%);
+}
+
+.testimonials {
+  /* height: 250px; */
+  background-image: linear-gradient(
+      rgba(66, 146, 235, 0.8),
+      rgba(66, 146, 235, 0.8)
+    ),
+    url("imgs/overlay-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-indicators {
+  bottom: -10%;
 }
 @media screen and (max-width: 990px) {
   .nav-item:hover::after {
