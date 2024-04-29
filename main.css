@@ -1,0 +1,132 @@
+:root {
+  --main-color: #0078ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.dropdown-item:hover {
+  background: rgb(204, 36, 36);
+}
+.parent-nested-drop-down:hover {
+  background: rgb(204, 36, 36);
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding: 0;
+}
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("imgs/hero-bg.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(0, 0, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar-toggler {
+  background-color: #fff;
+}
+.nav-item {
+  position: relative;
+  margin-inline: 10px;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width ease-in-out 0.2s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.about-container {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.progress {
+  margin-bottom: 1rem;
+}
+.about-header {
+  position: relative;
+  width: fit-content;
+}
+.about-header::after {
+  content: "";
+  bottom: -15%;
+  left: 0;
+  position: absolute;
+  height: 3px;
+  width: 80%;
+  background-color: var(--main-color);
+}
+
+.line {
+  width: 40px;
+  height: 5px;
+  background: var(--main-color);
+  margin: 0 auto;
+}
+
+.circle {
+  border: 10px solid var(--main-color);
+  padding: 40px 45px;
+  border-radius: 50%;
+  font-size: 32px;
+  transition: all ease-in-out 0.3s;
+}
+.card {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:hover .circle {
+  background-color: var(--main-color);
+  color: white;
+  border-color: #9cc4f1fb;
+}
+
+.numbers {
+  background-image: linear-gradient(
+      rgba(66, 146, 235, 0.8),
+      rgba(66, 146, 235, 0.8)
+    ),
+    url("imgs/counters-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 990px) {
+  .nav-item:hover::after {
+    width: 10%;
+  }
+  .active::after {
+    width: 10%;
+  }
+}

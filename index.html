@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Ass7</title>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header class="bg-black px-0 position-sticky top-0 z-3">
+      <nav class="navbar px-0 navbar-expand-lg bg-black">
+        <div class="container px-0">
+          <a class="navbar-brand text-white" href="#">DevFolio</a>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >HOME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >SERVICES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >WORK
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >BLOG
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-white dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu bg-black">
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Another action</a
+                    >
+                  </li>
+                  <li
+                    class="parent-nested-drop-down pe-5 d-flex justify-content-center align-items-center"
+                  >
+                    <a class="dropdown-item text-white" href="#"
+                      >Something else here</a
+                    >
+                    <i class="fa-solid fa-caret-right text-white"></i>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- start Hero -->
+    <div class="p0-0 hero">
+      <div
+        class="w-100 d-flex justify-content-center align-items-center text-white position-absolute top-50 start-50 end-50 bottom-50 translate-middle"
+      >
+        <div>
+          <h1 class="text-xxl fs-1">I am Morgan Freeman</h1>
+          <h2 id="element"></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Hero -->
+
+    <!-- Start About -->
+    <section class="about w-100 py-5">
+      <div class="container about-container p-5 bg-white">
+        <div class="row g-0">
+          <div
+            class="col-md-6 d-flex flex-column gap-2 justify-content-start align-items-center"
+          >
+            <div
+              class="testimonial-1 d-flex flex-sm-column flex-md-column flex-column flex-lg-row w-100 justify-content-center justify-content-md-start gap-3 gap-md-5 align-items-start align-items-sm-start"
+            >
+              <div class="image">
+                <img class="rounded-2" src="imgs/testimonial-2.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <div><strong>Name: </strong> <span>Morgan Freeman</span></div>
+                <div>
+                  <strong>Profile: </strong> <span>full stack developer</span>
+                </div>
+                <div>
+                  <strong>Email: </strong> <span>contact@example.com</span>
+                </div>
+                <div><strong>Phone: </strong> <span>(617) 557-0089</span></div>
+              </div>
+            </div>
+            <div class="skills w-100 my-3">
+              <h5>Skills</h5>
+              <div class="mt-2">
+                <div>
+                  <span>HTML 85%</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+                <div>
+                  <span>CSS3 75%</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar w-75"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <div>
+                  <span>BootStrap 100%</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar w-100"
+                      role="progressbar"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <div>
+                  <span>javaScript 85%</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex flex-column gap-2">
+            <h1 class="about-header mb-3">About me</h1>
+            <p>
+              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Praesent sapien massa, convallis a pellentesque nec, egestas non
+              nisi. Nulla porttitor accumsan tincidunt.
+            </p>
+            <p>
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum
+              ac diam sit amet quam vehicula elementum sed sit amet dui.
+              porttitor at sem.
+            </p>
+            <p>
+              Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut
+              lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
+              Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End About -->
+
+    <!-- Start Services -->
+    <section>
+      <div class="container">
+        <div class="row g-0 my-5">
+          <div class="col-sm-12">
+            <div class="section-title text-center">
+              <h1>SERVICES</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div
+              class="card d-flex justify-content-center align-items-center text-center flex-column gap-3 p-5 mb-4 border-0"
+            >
+              <div class="circle">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div>
+                <h3>WEB DESIGN</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  nulla. Incidunt necessitatibus adipisci voluptatem maxime quia
+                  iste magnam amet! Dolorem laudantium rerum reiciendis ipsam
+                  fugit!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div
+              class="card d-flex justify-content-center align-items-center text-center flex-column gap-3 p-5 mb-4 border-0"
+            >
+              <div class="circle">
+                <i class="fas fa-check"></i>
+              </div>
+              <div>
+                <h3>WEB DEVELOPMENT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  nulla. Incidunt necessitatibus adipisci voluptatem maxime quia
+                  iste magnam amet! Dolorem laudantium rerum reiciendis ipsam
+                  fugit!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div
+              class="card d-flex justify-content-center align-items-center text-center flex-column gap-3 p-5 mb-4 border-0"
+            >
+              <div class="circle">
+                <i class="fas fa-signal"></i>
+              </div>
+              <div>
+                <h3>PHOTOGRAPHY</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  nulla. Incidunt necessitatibus adipisci voluptatem maxime quia
+                  iste magnam amet! Dolorem laudantium rerum reiciendis ipsam
+                  fugit!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div
+              class="card d-flex justify-content-center align-items-center text-center flex-column gap-3 p-5 mb-4 border-0"
+            >
+              <div class="circle">
+                <i class="fas fa-binoculars"></i>
+              </div>
+              <div>
+                <h3>RESPONSIVE DESIGN</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  nulla. Incidunt necessitatibus adipisci voluptatem maxime quia
+                  iste magnam amet! Dolorem laudantium rerum reiciendis ipsam
+                  fugit!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div
+              class="card d-flex justify-content-center align-items-center text-center flex-column gap-3 p-5 mb-4 border-0"
+            >
+              <div class="circle">
+                <i class="fas fa-sun"></i>
+              </div>
+              <div>
+                <h3>GRAPHIC DESIGN</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  nulla. Incidunt necessitatibus adipisci voluptatem maxime quia
+                  iste magnam amet! Dolorem laudantium rerum reiciendis ipsam
+                  fugit!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div
+              class="card d-flex justify-content-center align-items-center text-center flex-column gap-3 p-5 mb-4 border-0"
+            >
+              <div class="circle">
+                <i class="fas fa-calendar-days"></i>
+              </div>
+              <div>
+                <h3>MARKETING SERVICES</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                  nulla. Incidunt necessitatibus adipisci voluptatem maxime quia
+                  iste magnam amet! Dolorem laudantium rerum reiciendis ipsam
+                  fugit!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Start Numbers -->
+    <section class="w-100 numbers mt-5 py-5">
+      <div class="container">
+        <div class="row g-0">
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center flex-column gap-2 text-white"
+          >
+            <div class="circle">
+              <i class="fas fa-check"></i>
+            </div>
+            <h3>450</h3>
+            <p>WORKS COMPLETED</p>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center flex-column gap-2 text-white"
+          >
+            <div class="circle">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>25</h3>
+            <p>YEARS OF EXPERIENCE</p>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center flex-column gap-2 text-white"
+          >
+            <div class="circle">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>550</h3>
+            <p>TOTAL CLIENTS</p>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center flex-column gap-2 text-white"
+          >
+            <div class="circle">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>48</h3>
+            <p>AWARD WON</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Numbers -->
+
+
+    <!-- SCRIPS -->
+
+    <!-- Typed JS -->
+    <script src="typed.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [`Freelancer `, `Designer `, `Web Developer`],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+        loopCount: Infinity,
+        showCursor: false,
+      });
+    </script>
+
+    <!-- Font Awosem -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- BootStrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main -->
+    <script src="script.js"></script>
+  </body>
+</html>
